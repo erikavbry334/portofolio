@@ -62,8 +62,10 @@ body {
 .navbar.shrink .navbar-toggler-icon {
   filter: invert(0);
 }
-.navbar.shrink .nav-link {
-  color: #676161;
+@media (min-width: 992px) {
+  .navbar.shrink .nav-link {
+    color: #676161;
+  }
 }
 @media (max-width: 992px) {
   .navbar .navbar-nav {
