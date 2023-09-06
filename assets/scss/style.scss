@@ -1,6 +1,6 @@
 $light: #ffffff;
 $gray: #676161;
-$main: #fff42d;
+$main: #fdcc3b;
 $dark: #212529;
 
 .bg-light {
@@ -162,15 +162,22 @@ body {
         }
     }
 
-    .btn {
-        border: 2px solid $main;
-        border-radius: 0;
-        padding: 0.75rem 1.5rem;
+    a.btn {
+        padding: 0 1rem 0 0;
         font-size: 1.25rem;
-        color: $main;
+        color: $light;
         position: relative;
-        overflow: hidden;
         transition: color 0.5s ease-in-out;
+        background-color: $dark;
+        border: none;
+
+        span.download {
+            margin-left: -5px;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
 
         >* {
             position: relative;
@@ -185,14 +192,15 @@ body {
             width: 0%;
             height: 100%;
             background-color: $main;
+            border-radius: 0 0.25rem 0.25rem 0;
+            transition: width 0.5s ease-in-out;
         }
 
         &:hover {
-            color: $light;
+            color: $dark;
 
             &::before {
                 width: 100%;
-                transition: width 0.5s ease-in-out;
             }
         }
     }

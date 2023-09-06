@@ -7,7 +7,7 @@
 }
 
 .bg-main {
-  background-color: #fff42d;
+  background-color: #fdcc3b;
 }
 
 .bg-dark {
@@ -23,7 +23,7 @@
 }
 
 .text-main {
-  color: #fff42d;
+  color: #fdcc3b;
 }
 
 .text-dark {
@@ -79,7 +79,7 @@ body {
   color: #ffffff;
 }
 .navbar .nav-link .icon {
-  color: #fff42d;
+  color: #fdcc3b;
 }
 .navbar .navbar-toggler-icon {
   filter: invert(1);
@@ -91,7 +91,7 @@ body {
   color: #ffffff;
 }
 .navbar .navbar-brand .logo {
-  background-color: #fff42d;
+  background-color: #fdcc3b;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -103,7 +103,7 @@ body {
   font-size: 0.75rem;
 }
 .navbar .nav-item:hover .nav-link {
-  color: #fff42d;
+  color: #fdcc3b;
   transition: 0.2s ease-in-out;
 }
 
@@ -134,38 +134,44 @@ body {
   left: 1.5rem;
   width: 2rem;
   height: 2px;
-  background-color: #fff42d;
+  background-color: #fdcc3b;
   transform: translateX(-100%);
 }
-.banner .btn {
-  border: 2px solid #fff42d;
-  border-radius: 0;
-  padding: 0.75rem 1.5rem;
+.banner a.btn {
+  padding: 0 1rem 0 0;
   font-size: 1.25rem;
-  color: #fff42d;
+  color: #ffffff;
   position: relative;
-  overflow: hidden;
   transition: color 0.5s ease-in-out;
+  background-color: #212529;
+  border: none;
 }
-.banner .btn > * {
+.banner a.btn span.download {
+  margin-left: -5px;
+}
+.banner a.btn span.download i {
+  font-size: 1.5rem;
+}
+.banner a.btn > * {
   position: relative;
   z-index: 2;
 }
-.banner .btn::before {
+.banner a.btn::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #fff42d;
-}
-.banner .btn:hover {
-  color: #ffffff;
-}
-.banner .btn:hover::before {
-  width: 100%;
+  background-color: #fdcc3b;
+  border-radius: 0 0.25rem 0.25rem 0;
   transition: width 0.5s ease-in-out;
+}
+.banner a.btn:hover {
+  color: #212529;
+}
+.banner a.btn:hover::before {
+  width: 100%;
 }
 .banner .profile {
   position: relative;
@@ -193,7 +199,7 @@ body {
   bottom: 0;
   width: 4rem;
   height: 4px;
-  background-color: #fff42d;
+  background-color: #fdcc3b;
   transform: translateX(-50%) translateY(1rem);
 }
 .skill .card {
@@ -240,7 +246,7 @@ body {
   bottom: 0;
   width: 4rem;
   height: 4px;
-  background-color: #fff42d;
+  background-color: #fdcc3b;
   transform: translateX(-50%) translateY(1rem);
 }
 .project .card .card-body {
@@ -288,12 +294,12 @@ body {
   bottom: 0;
   width: 4rem;
   height: 4px;
-  background-color: #fff42d;
+  background-color: #fdcc3b;
   transform: translateX(-50%) translateY(1rem);
 }
 .contact .card {
   max-width: 576px;
-  border-left: 5px solid #fff42d;
+  border-left: 5px solid #fdcc3b;
 }
 .contact .card a {
   text-decoration: none;
