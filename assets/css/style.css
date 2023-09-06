@@ -11,7 +11,7 @@
 }
 
 .bg-dark {
-  background-color: #676161;
+  background-color: #212529;
 }
 
 .text-light {
@@ -27,7 +27,7 @@
 }
 
 .text-dark {
-  color: #676161;
+  color: #212529;
 }
 
 html {
@@ -50,27 +50,29 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 1px 4px rgba(103, 97, 97, 0.1);
+  box-shadow: 0 1px 4px rgba(33, 37, 41, 0.1);
   transition: 0.2s;
 }
 .navbar.shrink {
   background-color: #ffffff;
 }
 .navbar.shrink .navbar-brand {
-  color: #676161;
+  color: #212529;
 }
 .navbar.shrink .navbar-toggler-icon {
   filter: invert(0);
 }
-.navbar.shrink .nav-link {
-  color: #676161;
-}
-.navbar.shrink .nav-link .icon {
-  color: #676161;
+@media (min-width: 992px) {
+  .navbar.shrink .nav-link {
+    color: #212529;
+  }
+  .navbar.shrink .nav-link .icon {
+    color: #212529;
+  }
 }
 @media (max-width: 992px) {
   .navbar .navbar-nav {
-    background-color: #fff42d;
+    background-color: #212529;
   }
 }
 .navbar .nav-link {
@@ -192,7 +194,7 @@ body {
   width: 4rem;
   height: 4px;
   background-color: #fff42d;
-  transform: translateX(-100%) translateY(1rem);
+  transform: translateX(-50%) translateY(1rem);
 }
 .skill .card {
   background-color: #676161;
@@ -214,9 +216,6 @@ body {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
-.skill .card p {
-  line-height: 1.5;
-}
 .skill .card .skill-icon {
   width: 24px;
   height: 24px;
@@ -225,4 +224,79 @@ body {
 }
 .skill .card .skill-icon:hover {
   transform: scale(1.5);
+}
+
+.project {
+  padding: 5rem 0;
+}
+.project h1 {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.project h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4rem;
+  height: 4px;
+  background-color: #fff42d;
+  transform: translateX(-50%) translateY(1rem);
+}
+.project .card .card-body {
+  position: relative;
+  padding-top: 2rem;
+}
+.project .card .card-body .card-cta {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  color: #212529;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.project .card .card-body .card-cta:hover {
+  background-color: #e6e6e6;
+}
+.project .card .card-body .card-cta i {
+  font-size: 1.2rem;
+}
+.project .card .card-body .card-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact {
+  padding: 5rem 0;
+}
+.contact h1 {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.contact h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4rem;
+  height: 4px;
+  background-color: #fff42d;
+  transform: translateX(-50%) translateY(1rem);
+}
+.contact .card {
+  max-width: 576px;
+  border-left: 5px solid #fff42d;
+}
+.contact .card a {
+  text-decoration: none;
+  color: #ffffff;
+  word-break: break-all;
 }/*# sourceMappingURL=style.css.map */
